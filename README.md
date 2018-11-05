@@ -2,7 +2,7 @@
 
 # JTouchBar
 
-Java library for using the touchbar API on supported macbooks.
+Java library for using the touchbar API on supported MacBooks.
 
 ## Support the Developers!
 
@@ -17,7 +17,7 @@ Please take a look at the other stuff the developers are working on and support 
 
 ### Maven
 
-```
+```xml
 <dependency>
 	<groupId>com.thizzer.jtouchbar</groupId>
 	<artifactId>jtouchbar</artifactId>
@@ -27,7 +27,7 @@ Please take a look at the other stuff the developers are working on and support 
 
 ### Using JTouchBar with SWT
 
-```
+```java
 Shell shell = ...
 
 JTouchBar jTouchBar = new JTouchBar();
@@ -40,7 +40,7 @@ jTouchBar.show(shell);
 
 ### Using JTouchBar with Swing
 
-```
+```java
 JFrame frame = ...
 
 JTouchBar jTouchBar = new JTouchBar();
@@ -53,7 +53,7 @@ jTouchBar.show(frame);
 
 ### Using JTouchBar with JavaFX
 
-```
+```java
 Stage stage = ...
 
 JTouchBar jTouchBar = new JTouchBar();
@@ -66,7 +66,7 @@ jTouchBar.show(stage);
 
 ### Using JTouchBar with LWJGL
 
-```
+```java
 long window = ... // LWJGL window
 
 JTouchBar jTouchBar = new JTouchBar();
@@ -81,7 +81,7 @@ jTouchBar.show(
 
 ### Adding views to your touchbar
 
-```
+```java
 // flexible space
 jTouchBar.addItem(new TouchBarItem(TouchBarItem.NSTouchBarItemIdentifierFlexibleSpace));
 
@@ -145,8 +145,6 @@ touchBarScrubber.setDataSource(new ScrubberDataSource() {
 });
 
 jTouchBar.addItem(new TouchBarItem("Scrubber_1", touchBarScrubber, true));
-
-
 ```
 
 ## License
